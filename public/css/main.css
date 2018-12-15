@@ -1,0 +1,504 @@
+
+/*Style for body*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+body{
+    background-image: url('../img/background.jpg');
+    height: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #1c1c47;
+}
+nav{
+    width: 80%;    
+  
+}
+nav ul{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+nav ul li{
+    padding: 13px;
+    list-style: none;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color:#AEBAD2;
+}
+nav ul li a:hover{
+    color:#fff;
+}
+.colorLogo{
+    color:#AB3496;
+}
+#logo{
+    text-decoration: none;
+    margin-top:8px;
+    margin-left: 45px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+footer{
+    background: #1c1c47;
+    height: 50px;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+}
+/* End style for body */
+
+
+/* Style form Searhc */
+
+#search{
+    display: flex;
+    flex-direction: column;
+    background: rgba(25,24,61,0.6);
+    padding: 50px;
+    width:300px;
+    height: 57.2vh;
+    margin: 50px auto;
+}
+#search input{
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+#main input{
+    width: 50px;
+    border-radius: 5px;
+}
+
+#search select{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#search span{
+    margin: 13px;
+    color: #fff;
+}
+
+#search input[type='submit']{
+    margin-top: 60px;
+    width: 280px;
+    padding: 8px;
+    background-color: #b543a0;
+    border:1px solid transparent;
+    outline: none;
+    color:#fff;
+}
+
+.rightMain{
+    position: absolute;
+    top:100px;
+    left: 500px;
+    width: 750px;
+    height: 500px;
+    background: #fff;
+}
+/* End style from Search */
+
+
+
+
+/* modal and tab */
+#cover {
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background: rgba(25,24,61,0.6);
+    display:none;
+    z-index:1000;
+  }
+.modalName{
+    background: #1C1C47;
+    color: #fff;
+    padding: 15px 50px;
+}
+  #popupWindow {
+    width:350px;
+    height:300px;
+    background:#fff;
+    overflow:hidden;
+    box-sizing:border-box;
+    font-family:arial;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-150px;
+    margin-top:-150px;
+  }
+ 
+  #popupWindow input{
+      width: 80%;
+      padding: 10px;
+      border-radius:5px;
+      margin-top:20px;
+      margin-left: 17px;
+      outline: none;
+  }
+
+  #tb1{
+    width: 80px;
+    text-align: center;
+  }
+  .btn {
+    position:absolute;
+    left:38px;
+    bottom:5%;
+    width:50%;
+    padding: 10px 50px;
+    text-align:center;
+    background:#B543A0;
+    color:#fff;
+  }
+  
+
+  .reder{
+    padding: 20px;
+} 
+
+  ul.tabs {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+  }
+  ul.tabs li {
+    border: gray solid 1px;
+    border-bottom: none;
+    float: left;
+    margin: 0 .25em 0 0;
+    padding: .25em .5em;
+  }
+  ul.tabs li a {
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  ul.tabs li.active {
+    background: gray;
+  }
+  ul.tabs li.active a {
+    color: white;
+  }
+  .clr {
+    clear: both;
+  }
+  article {
+    border-top: gray solid 1px;
+    padding: 0 1em;
+  }
+
+/* End modal and tab */
+
+/* user modal */
+.left{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 20px;    
+}
+.left span{
+   padding: 5px;
+   margin: 5px;
+}
+.left span span{
+    float: right;
+    position: relative;
+    top:-20px;
+    right: 40px;
+}
+.addPremises{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addPremises select{
+    width:300px;
+    padding: 4px;
+    margin: 4px;
+    
+}
+.addPremises input{
+    width:286px;
+    padding: 4px;
+    margin: 4px;
+    
+}
+.addPremises textarea{
+    width:296px;
+    height: 100px;
+    margin: 4px;
+    
+}
+.addPremises button{    
+    width:225px;
+    padding: 10px 50px;
+    text-align:center;
+    background:#B543A0;
+    color:#fff;
+}
+.edit{    
+    width:225px;
+    padding: 10px 50px;
+    text-align:center;
+    background:#B543A0;
+    color:#fff;
+    margin: 0 60px; 
+}
+.ui-tabs-vertical { width: 55em; }
+.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+
+#tabs ul{
+  background: transparent;
+  border: none;
+}
+#tabs ul li a{
+  color:#767676;
+ outline: none !important;
+}
+#tabs ul li{
+border:none !important;
+background: white;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a{
+  width: 89%;    
+  border:1px solid #ddd;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: 1px solid #fff;
+  color: black;
+  z-index: 1000;
+}
+#tabs{
+  background: #fff;
+  height: 550px;
+  margin: 20px auto;
+}
+.ui-tabs .ui-tabs-panel {
+  width: 690px;
+border-left: 1px solid #ddd !important;
+height: 94.5%;
+}
+table th,td{
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+}
+p.clip {
+  width: 100px !important;
+  white-space: nowrap; /* Запрещаем перенос строк */
+  overflow: hidden; /* Обрезаем все, что не помещается в область */
+  text-overflow: ellipsis; /* Добавляем многоточие */
+ }
+
+
+ .photo:hover::after {
+  content: attr(data-title); /* Выводим текст */
+  position: absolute; /* Абсолютное позиционирование */
+  left: 65%; top:5%; /* Положение подсказки */
+  z-index: 1; /* Отображаем подсказку поверх других элементов */
+  background: rgba(255,255,230,0.9); /* Полупрозрачный цвет фона */
+  font-family: Arial, sans-serif; /* Гарнитура шрифта */
+  font-size: 11px; /* Размер текста подсказки */
+ 
+  border: 1px solid #ddd; /* Параметры рамки */
+ }
+td{
+    width:90px;
+}
+td button{
+  background: #1c1c47;
+  color: #fff;
+  padding: 5px 10px;
+  outline: none;
+  font-size: 13px !important;
+}
+/* end user modal */
+
+
+/* page search */
+
+#cards{
+    display: flex;
+    padding: 20px;
+}
+.card{
+    border-radius: 10px;
+    margin: 15px;
+    width: 250px;
+    height: 250px;
+    background: #FFF;
+    box-shadow:  2px 2px 70px -15px grey
+} 
+
+
+.card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;            
+    width: 250px;
+    height: 160px;
+}
+.info button{
+    width:150px;            
+    position: relative;
+    left: 100px;
+    top:-65px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align:center;
+    background:#B543A0;
+    color:#fff;
+
+}
+.info div{
+    padding: 5px;
+    margin-left: 20px;
+    color:#fff;
+}
+.info .types{
+    margin-top:-35px;
+}
+.info .prices{
+    margin-top: 10px;
+    color:black;
+}
+.info .address{
+    color:#A4A4A4;
+    font-size:15px;
+
+}
+.info .address span{
+    padding: 10px 5px 10px 10px;
+}
+.info .address img{
+    margin-top: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+/* end page search */
+
+
+/* page item */
+
+.item {
+    width: 900px;
+    background: #fff;
+    display: flex;
+    margin: 110px auto;
+    padding: 15px;
+}
+
+.item .leftItem img {
+    width: 200px;
+    height: 200px;
+}
+
+.item .leftItem {
+    display: flex;
+    flex-direction: column;
+    width: 200px
+}
+
+.item .leftItem .infoLandlord {
+    display: flex;
+    flex-direction: column;
+    width: 400px
+}
+
+.item .leftItem .infoLandlord span {
+    padding: 10px;
+}
+
+.item .infoItem {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    width: 600px
+}
+
+.item .infoItem  span{
+    margin: 15px;
+}
+.item  .infoItem button {
+    width: 150px;
+    position: relative;
+    left: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background: #B543A0;
+    color: #fff;
+}
+.itemType{
+    font-size: 20px;
+ 
+}
+.itemType span{
+    margin-left: 250px !important;
+}
+.itemAddress{
+    font-size: 20px;
+    white-space: nowrap;
+}
+.itemAddress span{
+    margin-left: 165px !important;
+}
+.itemDescription{
+    font-size: 20px;
+}
+.itemPrice{
+    position: relative;
+    bottom: -65px;
+    font-size: 20px;
+}
+.itemPrice button{
+    margin-left: 150px;
+}
+/* end page item */
+
+.error {
+    width:250px;
+    height:auto;
+    position:absolute;
+    top:7.5%;
+    right: 40%;
+    background-color: #fff;
+    color: black;
+    font-family: Calibri;
+    font-size: 20px;
+    padding:10px;
+    text-align:center;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    z-index: 1000;
+  }

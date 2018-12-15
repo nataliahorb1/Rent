@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../lib/jquery.js"></script>        
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/themes.css">
+
+
+    <script src="../lib/cookies.js"></script>            
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/item.js"></script>
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a id='logo' href="/">
+            <span>RENT<span class="colorLogo">UA</span></span>
+        </a>
+        <nav>
+            <ul id='nav'>
+                <li>
+                    <a  href="#">Личный кабинет</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="item" >
+            <!-- <div class="leftItem">
+                <img src="https://static.pexels.com/photos/186077/pexels-photo-186077.jpeg  " alt="">
+                <div class="infoLandlord">
+                    <h5 style="font-size:15px;">Информация арендодателя</h5>
+                    <span class="surnameLandlord" style="color:#A4A4A4; border:1px solid #A4A4A4; width:170px;height:30px;margin-bottom:10px;margin-top:10px;"><i style="font-size:22px;" class="fa fa-user fa-1x" aria-hidden="true"></i> <span style="padding:13.5px;margin-left:28px;position:relative;top:1.4px;border-left:1px solid  #A4A4A4;">Кротов Петр</span></span>
+                    <span class="phoneLandlord"  style="color:#A4A4A4; border:1px solid #A4A4A4; width:170px;"><i  class="fa fa-mobile fa-2x" aria-hidden="true"></i> <span style="margin-left:30px;position:relative; top:-5.6px; padding: 14px; border-left:1px solid  #A4A4A4; ">38095454555</span></span>
+                </div>
+            </div>
+            <div class="infoItem">
+                <span class="itemType">Дом</span>
+                <span class="itemAddress">Киев</span>
+                <span class="itemDiscreption">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt iste laudantium provident. A, eligendi! Doloribus
+                    inventore molestiae illo repellendus accusantium iusto labore quis quas, aliquam fugiat voluptatibus
+                    veritatis. Commodi, dolorum?</span>
+                <span class="itemPrice">1000USD / месяц</span>
+                <button>Оформить заказ</button>
+            </div> -->
+        </div>
+    </main>
+    <footer></footer>
+    <div id="cover">
+            <div id="popupWindow" style="width:380px;height:500px;top:30%">
+            <div class='modalName'>Аренда<span id="btnClose" style="margin-left:220px; font-weight:bold;"><a style="text-decoration:none;color:#fff;" href="#">X</a></span></div>
+      <div class="reder">    
+      <ul class="tabs">
+        <li ><a  href="#tab1">Физическое лицо</a></li>
+        <li ><a href="#tab2">Юридическое лицо</a></li>
+      </ul>
+      <div class="clr"></div>
+      <section class="block">
+        <article id="tab1">
+            <input type="text" name='surname' placeholder="Введите фамилию" class="tenantSurname">
+            <input type="text" name='name' placeholder="Введите имя" class="tenantName">
+            <input type="text" name='patronymic' placeholder="Введите отчество" class="tenantPatronymic">  
+            <input type="text" name='phone' placeholder="Введите телефон" class="tenantPhone"> 
+            <input type="text" name='address' placeholder="Введите адрес" class="tenantAddress"> 
+            <button class="btn" id='btnClose1' style="margin-left:55px;" onclick="tenantIndividual();">Арендовать</button>                     
+        </article>
+        <article id="tab2">
+                <input type="text" name='title' placeholder="Введите название" class="tenantSurname">
+                <input type="text" name='ITN' placeholder="Введите ИНН" class="tenantName">
+                <input type="text" name='manager' placeholder="Введите руководителя" class="tenantPatronymic">  
+                <input type="text" name='phone' placeholder="Введите телефон" class="tenantPhone"> 
+                <input type="text" name='address' placeholder="Введите адрес" class="tenantAddress"> 
+                <button id='btnCloser' class="btn" style="margin-left:55px;" onclick="tenantEntity();">Арендовать</button>      
+        </article>
+      </section>
+    </div>
+            </div>
+          </div>
+          <div class='error' style='display:none'></div>          
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="lib/jquery.js"></script>
+    <script src="lib/cookies.js"></script>            
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/mainForm.js"></script>
+    <script src="js/login.js"></script>    
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a id='logo' href="/"><span >RENT<span class="colorLogo">UA</span>
+        </span></a>
+        <nav>
+            <ul id='nav'>
+                <li>
+                    <a id="btnShow" href="#">Личный кабинет</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id='search'>
+            <select name="city" id="">
+                <option disabled="disabled" selected="selected">Выберите город</option>
+                <option value="Vinnytsia">Винница</option>
+                <option value="Dnipro">Днепро</option>
+                <option value="Donetsk">Донецк</option>
+                <option value="Zhytomyr">Житомир</option>
+                <option value="Zaporizhzhia">Запорожье</option>
+                <option value="Ivano-Frankivsk">Ивано-Франковск</option>
+                <option value="Kyiv">Киев</option>
+                <option value="Kirovohrad">Кировоград</option>
+                <option value="Luhansk">Луганск</option>
+                <option value="Lutsk">Луцк</option>
+                <option value="Lviv">Львов</option>
+                <option value="Mykolaiv">Николаев</option>
+                <option value="Odesa">Одесса</option>
+                <option value="Poltava">Полтава</option>
+                <option value="Rivne">Ровно</option>
+                <option value="Sevastopol">Севастополь</option>
+                <option value="Simferopol">Симферополь</option>
+                <option value="Sumy">Сумы</option>
+                <option value="Ternopil">Тернополь</option>
+                <option value="Uzhhorod">Ужгород</option>
+                <option value="Kharkiv">Харьков</option>
+                <option value="Kherson">Херсон</option>
+                <option value="Khmelnytskyi">Хмельницкий</option>
+                <option value="Cherkasy">Черкассы</option>
+                <option value="Chernivtsi">Черновцы</option>
+                <option value="Chernihiv">Чернигов</option>
+                <option value="Krivoy-Rog">Кривой Рог</option>
+            </select>
+            <select name="ptype" id="ptype">
+                <option>Квартиры</option>
+                <option>Дома</option>
+                <option>Коммерческая недвижимость</option>
+                <option>Офисы</option>
+                <option>Земельные участки</option>
+                <option>Гаражи</option>
+            </select>
+            <select name="ctype" id="ctype">
+
+            </select>
+            <div id='main'></div>
+        </div>
+      
+    </main>
+    <div class='error' style='display:none'></div>
+    <footer></footer>
+
+
+
+    <div id="cover">
+            <div id="popupWindow" style="height:300px;">
+            <div class='modalName'>Личный кабинет<span id="btnClose" style="margin-left:190px;margin-top:-40px; font-weight:bold;"><a style="text-decoration:none;color:#fff;" href="#">X</a></span></div>
+      <div class="reder">    
+      <ul class="tabs">
+        <li id='tb1'><a  href="#tab1">Войти</a></li>
+        <li id='tb'><a href="#tab2">Зарегистрироваться</a></li>
+      </ul>
+      <div class="clr"></div>
+      <section class="block">
+        <article id="tab1">
+            <form action="">
+            <input placeholder="Enter e-mail" type="email" name="email" id='email'>
+            <br/>
+            <input placeholder="Enter password" type="password" name="password" id='password'>
+            <div class="btn" id="btnClose1" style='bottom:7%;'>Войти</div>
+        </form>
+        </article>
+        <article id="tab2">
+            <input placeholder="Enter surname" type="text" name="" id="surname">
+            <input placeholder="Enter name" type="text" name="" id="name">
+            <input placeholder="Enter patronymic" type="text" name="" id="patronymic">
+            <input placeholder="Enter phone" type="text" name="" id="phone">
+            <input placeholder="Enter e-mail" type="email" name="" id="emailr">
+            <input placeholder="Enter password" type="password" name="" id="passwordr">
+            <div class="btn" id="btnCloser">Зарегистрироваться</div>
+        </article>
+      </section>
+    </div>
+            </div>
+          </div>
+</body>
+
+</html>
